@@ -201,7 +201,7 @@ const HTML = `<!DOCTYPE html>
                 <div>
                     <div class="input-group">
                         <label>Game PIN</label>
-                        <input type="text" id="pin" placeholder="Enter 6-digit code" maxlength="6">
+                        <input type="text" id="pin" placeholder="Enter 7-digit code" maxlength="7">
                     </div>
                     <div class="input-group">
                         <label>Bot name</label>
@@ -229,7 +229,7 @@ const HTML = `<!DOCTYPE html>
                 <div>
                     <div class="input-group">
                         <label>Game PIN</label>
-                        <input type="text" id="spamPin" placeholder="Enter 6-digit code" maxlength="6">
+                        <input type="text" id="spamPin" placeholder="Enter 7-digit code" maxlength="7">
                     </div>
                     <div class="input-group">
                         <label>Bot name prefix</label>
@@ -398,7 +398,6 @@ const HTML = `<!DOCTYPE html>
 let activeBrowsers = [];
 let isKilling = false;
 
-// IMPORTANT: API key must be set as environment variable OPENROUTER_KEY
 const OPENROUTER_KEY = process.env.OPENROUTER_KEY;
 
 async function getAnswer(question, options) {
